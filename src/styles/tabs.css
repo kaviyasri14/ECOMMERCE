@@ -1,0 +1,133 @@
+.tabs .tablist {
+  margin-left: 12%;
+  padding: 0 0 1em 0;
+  font-weight: bold;
+  list-style-type: none;
+  position: relative;
+}
+
+.tabs {
+  display: none;
+  display: table-cell;
+}
+.tabsChild {
+  display: table-cell;
+}
+
+.tabbed-content .tabs .tabItems {
+  display: inline-block;
+}
+.verticalTabs {
+  color: #000;
+  padding: 5px 8px;
+  cursor: pointer;
+  margin: 3px 0;
+  height: 45px;
+}
+.tabSubtitle {
+  color: silver;
+}
+.chev {
+  float: right;
+  font-weight: bolder;
+}
+
+.item {
+  min-height: 0;
+  position: relative;
+}
+.item > span {
+  position: absolute;
+  top: -1%;
+  padding-left: 80%;
+  padding-bottom: 3%;
+}
+
+.hidepane {
+  display: none;
+}
+
+.line {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background: black;
+}
+.item::before {
+  content: attr(data-title);
+}
+.item .item-content {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
+.item.active1 .item-content {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+
+.item::before {
+  cursor: pointer;
+  font-weight: bold;
+  padding-left: 6%;
+  display: block;
+  font-size: 20px;
+}
+.item.active::before {
+  background: #444;
+  color: #eee;
+}
+.tabs-side {
+  display: table-cell;
+}
+@media all and (min-width: 1025px) {
+  .tablist {
+    margin-top: 50%;
+  }
+}
+@media all and (max-width: 1024px) {
+  .tablist {
+    margin-top: 60%;
+  }
+}
+@media all and (max-width: 770px) {
+  .tablist {
+    margin-top: 75%;
+  }
+}
+
+@media all and (min-width: 500px) {
+  .tabs-side .tabs .tabItems {
+    margin-bottom: 2px;
+  }
+  .item.active .item-content {
+    padding-top: 0;
+  }
+
+  .tabs-side .tabs {
+    width: 30%;
+    float: left;
+    display: block;
+  }
+
+  .item > span {
+    display: none;
+  }
+  .item::before {
+    display: none;
+  }
+}
+@media all and (max-width: 420px) {
+  .tabsChild {
+    display: block;
+  }
+  .tabs {
+    display: none;
+  }
+}
+@media all and (max-width: 650px) {
+  .tablist {
+    margin-top: 100%;
+  }
+}

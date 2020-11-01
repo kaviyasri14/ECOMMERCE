@@ -1,0 +1,44 @@
+.inputelement {
+  width: 96%;
+  padding: 12px 20px;
+  border: 1px solid grey;
+}
+.line {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background: black;
+}
+.userSubtitle {
+  margin-left: 6%;
+  color: silver;
+}
+
+.btn {
+  border: none;
+  color: white;
+  margin: 2px;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.btnlarge {
+  width: 100%;
+}
+.btnsmall {
+  width: 40%;
+}
+.btnverysmall {
+  width: 25%;
+}
+.btnmedium {
+  width: 93%;
+}
+.sec {
+  background-color: rgba(225, 0, 0, 1);
+}
+.dark {
+  background-color: rgb(41, 34, 34);
+}

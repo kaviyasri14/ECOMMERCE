@@ -1,0 +1,106 @@
+.MyDesktopOrder {
+  width: 95%;
+  display: inline-block;
+  margin: 2px;
+  border-bottom: 1px solid silver;
+}
+.myOrderPoster {
+  float: left;
+  border: 5px solid wheat;
+}
+.myOrderPrice {
+  font-size: 16px;
+  color: grey;
+  float: right;
+}
+.myOrderContainerDesktop {
+  width: 70%;
+  margin-left: 10%;
+}
+.orderid {
+  font-size: 16px;
+  float: left;
+  color: grey;
+}
+.orderdesc {
+  font-weight: bold;
+  margin: 0;
+  font-size: 12px;
+  float: left;
+  width: 40%;
+  margin-top: 10px;
+  text-align: left;
+  margin-top: 1px;
+}
+.myOrderTitleDesk {
+  color: silver;
+}
+.orderDate {
+  margin: 0%;
+  font-size: 14px;
+  float: left;
+  color: silver;
+  margin-top: 3px;
+}
+.arrow {
+  transform: rotate(90deg);
+  float: right;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.progress {
+  width: 80px;
+  height: 20px;
+  margin: 0;
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 1%;
+  float: right;
+}
+.completed {
+  background-color: rgb(41, 34, 34);
+  color: white;
+}
+.pending {
+  background-color: grey;
+  color: black;
+}
+.myMobileOrder {
+  border-bottom: 1px solid grey;
+  width: 100%;
+  display: inline-block;
+}
+@media only screen and (max-width: 420px) {
+  .orderDate {
+    font-size: 9px;
+  }
+  .arrow {
+    transform: rotate(0deg);
+  }
+  .myOrderPrice {
+    font-size: 9px;
+  }
+  .myOrderContainerDesktop {
+    margin-left: 25%;
+  }
+  .orderdesc {
+    width: 55%;
+    font-size: 9px;
+  }
+  .pendingbuton {
+    margin-top: 14%;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .myOrderPrice {
+    font-size: 10px;
+  }
+  .orderDate {
+    font-size: 9px;
+  }
+  .orderid,
+  .orderdesc {
+    font-size: 10px;
+  }
+}

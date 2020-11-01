@@ -1,0 +1,78 @@
+.navs {
+  float: left;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+  margin-right: 30px;
+}
+.navs:hover {
+  cursor: pointer;
+}
+.Navbar {
+  margin: 0%;
+  border-bottom: 2px solid grey;
+  height: 70px;
+}
+.logo {
+  font-size: 20px;
+  width: 103px;
+  color: white;
+  background-color: rgba(225, 0, 0, 1);
+}
+.selected {
+  color: rgba(225, 0, 0, 1);
+}
+.NavList {
+  height: 100%;
+}
+.navbaricon {
+  margin-right: 55px;
+  height: 100%;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+hr {
+  width: 70%;
+}
+.closeicon {
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.SideMenu {
+  list-style-type: none;
+  float: right;
+  z-index: 1;
+  right: 0;
+  position: absolute;
+  margin-right: 0px;
+  width: 50%;
+  height: 100%;
+  box-shadow: 1px;
+  background-color: white;
+}
+.listitems {
+  margin-top: 90px;
+}
+.showactive {
+  color: rgba(225, 0, 0, 1);
+}
+.overlayitems {
+  margin-top: 45%;
+}
+.overlayitems > li {
+  padding-bottom: 5%;
+  margin-left: 15%;
+}
+@media only screen and (max-width: 600px) {
+  .navbaricon {
+    margin-right: 5px;
+  }
+  .navs {
+    margin-left: 40px;
+  }
+}
